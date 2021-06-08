@@ -1,0 +1,139 @@
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "head head head head"
+    "main1 main2 main3 main4"
+    "sect1 sect1 sect2 sect2"
+    "foot1 foot1 foot1 foot2";
+}
+
+.head {
+  grid-area: head;
+  background-color: hsl(340, 70%, 87%);
+  height: 110px;
+}
+
+.main1 {
+  grid-area: main1;
+  background-color: #ee2e84;
+  height: 110px;
+}
+
+.main2 {
+  grid-area: main2;
+  background-color: #ee2e84;
+  height: 110px;
+}
+
+.main3 {
+  grid-area: main3;
+  background-color: #ee2e84;
+  height: 110px;
+}
+
+.main4 {
+  grid-area: main4;
+  background-color: #ee2e84;
+  height: 110px;
+}
+
+.sect1 {
+  grid-area: sect1;
+  background-color: #85cfd8;
+  height: 110px;
+}
+
+.sect2 {
+  grid-area: sect2;
+  background-color: #85cfd8;
+  height: 110px;
+}
+
+.foot1 {
+  grid-area: foot1;
+  background-color: #8dc63f;
+  height: 110px;
+}
+
+.foot2 {
+  grid-area: foot2;
+  background-color: #e76e34;
+  height: 110px;
+}
+.grid-container2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    display: none;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 0px;
+    grid-template-areas:
+      "head head head head"
+      "sect1 sect1 sect1 sect1"
+      "sect2 sect2 sect2 sect2"
+      "sect3 sect3 sect3 sect3"
+      "sect4 sect4 sect4 sect4"
+      "bottom1 bottom1 bottom1 bottom1"
+      "bottom2 bottom2 bottom2 bottom2"
+      "foot1 foot1 foot1 foot1"
+      "foot2 foot2 foot2 foot2";
+  }
+  .head {
+    grid-area: head;
+    background-color: hsl(340, 70%, 87%);
+    height: 60px;
+  }
+  .sect1 {
+    grid-area: sect1;
+    background-color: #ee2e84;
+    height: 60px;
+  }
+  .sect2 {
+    grid-area: sect2;
+    background-color: #ee2e84;
+    height: 60px;
+  }
+  .sect3 {
+    grid-area: sect3;
+    background-color: #ee2e84;
+    height: 60px;
+  }
+  .sect4 {
+    grid-area: sect4;
+    background-color: #ee2e84;
+    height: 60px;
+  }
+  .bottom1 {
+    grid-area: bottom1;
+    background-color: #85cfd8;
+    height: 60px;
+  }
+  .bottom2 {
+    grid-area: bottom2;
+    background-color: #85cfd8;
+    height: 60px;
+  }
+  .foot1 {
+    grid-area: foot1;
+    background-color: #8dc63f;
+    height: 60px;
+  }
+  .foot2 {
+    grid-area: foot2;
+    background-color: #e76e34;
+    height: 60px;
+  }
+} ;
