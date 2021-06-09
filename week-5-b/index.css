@@ -1,0 +1,154 @@
+body {
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar {
+  background-color: lightgrey;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.content {
+  padding: 20px;
+  text-align: start;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.sidebar2 {
+  background-color: rgb(216, 171, 171);
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* phone screen */
+@media (min-width: 360px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "sidebar2"
+      "footer";
+  }
+  .header {
+    grid-area: header;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .content {
+    grid-area: content;
+  }
+  .sidebar2 {
+    grid-area: sidebar2;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+
+/* tablet screens */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "sidebar content content content"
+      "sidebar content content content"
+      "sidebar2 sidebar2 sidebar2 sidebar2"
+      "footer footer footer footer";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .sidebar2 {
+    grid-area: sidebar2;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
+
+/* laptop */
+@media (min-width: 950px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header header"
+      "sidebar content content content sidebar2"
+      "sidebar content content content sidebar2"
+      "footer footer footer footer footer";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .sidebar2 {
+    grid-area: sidebar2;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
