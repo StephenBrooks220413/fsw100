@@ -1,0 +1,28 @@
+body {
+  margin: 5px;
+  padding: 10px;
+}
+div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.list1 {
+  width: 50%;
+  float: left;
+}
+ol {
+  padding-left: 45%;
+}
+.list2 {
+  width: 50%;
+  float: right;
+}
+ul {
+  padding-left: 45%;
+}
+.content {
+  display: block;
+}
+.wrapper {
+  display: inline;
+}

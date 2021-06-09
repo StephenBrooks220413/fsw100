@@ -1,0 +1,60 @@
+.intro-bg {
+  background-image: linear-gradient(to bottom, #22313f 80%, #f4f4f4);
+  height: 40vh;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 568px) {
+  .intro-bg {
+    background-image: linear-gradient(to bottom, #22313f 80%, #f4f4f4);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    justify-content: center;
+    text-align: center;
+  }
+  .img {
+    justify-items: center;
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+}
+
+.container1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  color: orange;
+}
+
+.img {
+  max-width: 350px;
+  float: left;
+}
+
+.container1 > p.text {
+  margin-left: 10px;
+}
+
+.container2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
+  justify-content: center;
+}
+
+fieldset {
+  margin-bottom: 80px;
+}
