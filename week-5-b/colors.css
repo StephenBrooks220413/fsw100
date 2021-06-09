@@ -1,0 +1,132 @@
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "red red red blue blue blue"
+    "green green purple purple purple purple"
+    "yellow yellow yellow yellow yellow yellow";
+  width: 99.7%;
+  height: 100%;
+}
+
+.red {
+  grid-area: red;
+  background-color: red;
+  height: 30px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 5px;
+}
+
+.blue {
+  grid-area: blue;
+  background-color: blue;
+  height: 30px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 5px;
+}
+
+.green {
+  grid-area: green;
+  background-color: green;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  margin: 5px;
+}
+
+.purple {
+  grid-area: purple;
+  background-color: purple;
+  height: 30px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 5px;
+}
+
+.yellow {
+  grid-area: yellow;
+  background-color: yellow;
+  height: 30px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 5px;
+}
+
+@media (max-width: 668px) {
+  .container1 {
+    display: none;
+  }
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "red-block red-block red-block red-block"
+      "blue-block blue-block green-block green-block"
+      "blue-block blue-block purple-block1 purple-block-2";
+    width: 98.1%;
+    height: 100%;
+  }
+
+  .red-block {
+    grid-area: red-block;
+    background-color: red;
+    height: 30px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+  }
+
+  .blue-block {
+    grid-area: blue-block;
+    background-color: blue;
+    height: 135px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+  }
+
+  .green-block {
+    grid-area: green-block;
+    background-color: green;
+    height: 30px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+  }
+
+  .purple-block1 {
+    grid-area: purple-block1;
+    background-color: purple;
+    height: 30px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+  }
+
+  .purple-block-2 {
+    grid-area: purple-block-2;
+    background-color: purple;
+    height: 30px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+  }
+}
