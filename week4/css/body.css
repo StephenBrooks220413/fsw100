@@ -6,7 +6,34 @@
   padding-bottom: 60px;
 }
 
-@media (max-width: 568px) {
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "img img text text"
+    ". . . ."
+    ". . . .";
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  color: orange;
+}
+
+.max {
+  width: 90%;
+}
+
+.img {
+  grid-area: img;
+}
+.text {
+  grid-area: text;
+}
+
+@media (max-width: 768px) {
   .intro-bg {
     background-image: linear-gradient(to bottom, #22313f 80%, #f4f4f4);
     height: auto;
@@ -23,23 +50,31 @@
   .text {
     width: 100%;
   }
-}
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img img"
+      "text text";
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: orange;
+  }
 
-.container1 {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  color: orange;
-}
+  .max {
+    width: 90%;
+  }
 
-.img {
-  max-width: 350px;
-  float: left;
-}
-
-.container1 > p.text {
-  margin-left: 10px;
+  .img {
+    grid-area: img;
+  }
+  .text {
+    grid-area: text;
+  }
 }
 
 .container2 {
