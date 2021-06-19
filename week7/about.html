@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bob's Electric - About</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <title>Bob's Electric - About Us</title>
 </head>
 <body>
+    <!-- top navigation and header -->
+    <header>
+        <nav id="nav1">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dropdown">
+            <span><h3>MENU</h3></span>
+            <div class="dropdown-content">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <h1 class="display">About Us</h1>
+    <div class="social-media-wrapper">
+        <a href="www.facebook.com" style="text-decoration:none;" target="_blank">
+            <i class="fab icon-f fa-facebook"></i> 
+        </a>
+        <a href="www.linkedin.com" style="text-decoration:none;" target="_blank">
+            <i class="fab icon-l fa-linkedin"></i> 
+        </a>
+        <a href="www.twitter.com" style="text-decoration:none;" target="_blank">
+            <i class="fab icon-t fa-twitter-square"></i>
+        </a>
+    </div>
+   
+    <!-- second category -->
+    <article itemid="article">
+        <div class="container">
+            <strong>Since</strong> 1997 we have been a family owned business. We started in Columbus Ohio with Jim and Mike.
+            Two Brothers that had started to work as handymen, after being laid off from their previous employer. Time had 
+            passed and they grew to 7 states with 9 offices.
+        </div>
+    </article>
+
+    <div class="container1">
+        <div class="content1">
+            <img src="./assets/worker-1.png" class="img" alt="">
+            <h2>Mike Oswald</h2>
+            <p>
+                Lead Electrician
+            </p>
+        </div>
+        <div class="content2">
+            <img src="./assets/worker-2.png" class="img" alt="">
+            <h2>Jim Slugh</h2>
+            <p>
+                Supervisor
+            </p>
+        </div>
+        <div class="content3">
+            <img src="./assets/worker-3.png" class="img" alt="">
+            <h2>Mark Burnham</h2>
+            <p>
+                Team Lead
+            </p>
+        </div>
+    </div>
     
+    <br><br><br>
+    <!-- javascript -->
+    <script src="./js/main.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3603abffb2.js" crossorigin="anonymous"></script>
+    <footer>
+        <center>
+            Copyright 2021
+        </center>
+    </footer>
+
 </body>
 </html>

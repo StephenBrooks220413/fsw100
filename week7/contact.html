@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bob's Electric - Contact</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <title>Bob's Electric - Contact Us</title>
 </head>
+<style>
+    footer {
+        background-color: orange;
+        color: black;
+        width: 100%;
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: absolute;
+        bottom: 0;
+    }
+</style>
 <body>
+    <!-- top navigation and header -->
+    <header>
+        <nav id="nav1">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dropdown">
+            <span><h3>MENU</h3></span>
+            <div class="dropdown-content">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <h1 class="display">Contact Us</h1>
     
+    <!-- form -->
+    <div class="container">
+        <form action="">
+            <label for="name">Your Name: <br>
+                <input type="text" class="form-input">
+            </label> <br>
+            <label for="name">Your Email: <br>
+                <input type="text" class="form-input">
+            </label> <br>
+            <label for="name">Your Message: <br>
+                <textarea name="" id="" cols="20" class="form-message" rows="7"></textarea>
+            </label> <br>
+            <button class="btn btn-primary">SEND</button>
+        </form>
+    </div>
+    
+    <br><br><br>
+    <!-- javascript -->
+    <script src="./js/main.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3603abffb2.js" crossorigin="anonymous"></script>
+    <footer>
+        <center>
+            Copyright 2021
+        </center>
+    </footer>
+
 </body>
 </html>

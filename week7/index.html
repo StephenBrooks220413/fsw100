@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>Bob's Electric - Home</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
 
     <div class="intro-bg">
         <div class="container">
-            <h1 class="display warning">Your Local Electrician</h1>
+            <h1 class="display-1 warning">Your Local Electrician</h1>
             <small class="container-text">
                 The choice is clear when it comes to designer outfits and popular brands.
             </small> <br><br><br>
@@ -71,7 +72,7 @@
             <hr>
             <p>
                 If you want to do it yourself, then 
-                maybe you should see our tips page.
+                maybe you should see our <a href="tips.html">tips</a> page.
             </p>
         </div>
         <div class="content3">
@@ -84,12 +85,12 @@
             </p>
         </div>
     </div>
-    <br><br><br>
+    <br>
     <!-- second category -->
     <article itemid="article">
         <!-- container -->
             <h1 class="display">Services</h1>
-        <div class="section">
+        <div class="section1">
             <div class="block1">
                 <img src="./assets/qualityCheck.png" class="img" alt="">
             </div>
@@ -100,22 +101,50 @@
                     everything is up to code and works properly.
                 </p>
             </div>
-            <br><br>
-            <div class="block2">
-                <h2>Quality Assurance</h2>
+        </div>
+        <br>
+        <div class="section2">
+            <div class="block1">
+                <h2>Building Your Dream Home?</h2>
                 <p>
-                    We continously check our work as we go and ensure 
-                    everything is up to code and works properly.
+                    Hire us!!! We love building homes and make our work 
+                    a trademark for your home. We garauntee satisfaction.
                 </p>
             </div>
-            <div class="block1">
-                <img src="./assets/qualityCheck.png" class="img" alt="">
+            <div class="block2">
+                <img src="./assets/newWork.png" class="img" alt="">
             </div>
         </div>
     </article>
+    <br><br><br>
+    <div class="scheduling">
+        <h1>Schedule With Us</h1>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="btn btn-primary">MESSAGING</button>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Message Us</h1>
+                <form action="#" method="" class="container">
+                    <label for="date">When should we schedule?</label> <br>
+                    <input type="date" required> <input type="time" required> <br><br>
+                    <input type="text" required placeholder="Your Name" class="form-input"><br><br>
+                    <input type="email" required placeholder="Your Email" class="form-input"><br><br>
+                    <textarea name="message" required spellcheck="true" maxlength="355" placeholder="Your Message" id="message" cols="35" rows="10"></textarea><br>
+                    <button class="btn btn-primary" class="form-message">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div id="demo"></div>
+        <img src="./assets/Calendar.png" class="img2" c alt="">
+    </div>
+    <br><br><br>
     <!-- javascript -->
-    <script src=""></script>
+    <script src="./js/main.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3603abffb2.js" crossorigin="anonymous"></script>
     <footer>
