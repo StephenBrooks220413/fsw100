@@ -1,0 +1,28 @@
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media-wrapper {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    word-spacing: 22px;
+    margin-bottom: 12px;
+}
+
+.icon-f {
+    font-size: 1.4em;
+    color: rgb(110, 110, 216);
+}
+
+.icon-l {
+    font-size: 1.4em;
+    color: blue;
+}
+
+.icon-t {
+    font-size: 1.4em;
+    color: yellow;
+}

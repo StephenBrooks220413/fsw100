@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>My Reflection</title>
+</head>
+<body>
+    <!-- top navigation and header -->
+    <header>
+        <nav id="nav1">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/stephen-brooks-0a359b209/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/StephenBrooks220413" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://portfolium.com/stephenbrooks15" target="_blank">Portfolium</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="dropdown">
+            <span><h3>MENU</h3></span>
+            <div class="dropdown-content">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/stephen-brooks-0a359b209/" target="_blank">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/StephenBrooks220413" target="_blank">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://portfolium.com/stephenbrooks15" target="_blank">Portfolium</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro-bg">
+        <div class="container">
+            <h1 class="display-1 white">Web Development Journey</h1>
+            <i class="fab icon-h fa-html5"></i>
+            <i class="fab icon-c fa-css3-alt"></i>
+            <i class="fab icon-j fa-js-square"></i>
+
+        </div>
+    </div>
+
+    <br>
+    <!-- second category for home page -->
+    <article itemid="article">
+        <!-- container -->
+            <h1 class="display">The Author</h1>
+        <div class="section1">
+            <div class="block1">
+                <img src="./assets/author.png" class="img-fluid" alt="">
+            </div>
+            <div class="block2">
+                <h2>Stephen Brooks</h2>
+                <p>
+                    Prior to attending Bryan University I had learned some front end languages.
+                    I had realized that I needed to learn more with the front end and the backend
+                    to get a job as a developer. I had finished FSW 105, FSW 100 and FSW 110 so far, 
+                    and then moving onto the next courses. I plan on using what I learn to improve 
+                    what I know now and apply it as I move forward with this program.
+                </p>
+            </div>
+        </div>
+    </article>
+    <div class="container">
+        <fieldset>
+            <legend>Summary</legend>
+            Some things I noticed that can be a potential road block are not being prepared 
+            for an interview, not practicing what you learned, being realistic with yourself.
+            Making a first impression is important, but also knowing how to code according to 
+            the industry use. During my journey with Bryan University, I will continously
+            practice so I will retain what I learn and practice what I will learn.
+        </fieldset>
+    </div>
+    <br><br>
+    <div class="scheduling">
+        <h1>Schedule An Interview With Me</h1>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="btn btn-primary">BOOKING</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Interview With Me</h1>
+                <form name="schedule" netlify class="container">
+                    <label for="date">When should we schedule?</label> <br>
+                    <input type="date" name="date" required> <input type="time" name="time" required> <br><br>
+                    <input type="text" name="name" required placeholder="Your Name" class="form-input"><br><br>
+                    <input type="email" name="email" required placeholder="Your Email" class="form-input"><br><br>
+                    <textarea name="message" required spellcheck="true" maxlength="355" placeholder="Your Message" id="message" cols="35" rows="10"></textarea><br>
+                    <button class="btn btn-primary" class="form-message">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div id="demo"></div>
+        <img src="./assets/Calendar.png" class="img2" c alt="">
+    </div>
+    <br><br><br><!-- javascript -->
+    <script src="./js/main.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3603abffb2.js" crossorigin="anonymous"></script>
+    <footer>
+        <center>
+            Copyright 2021
+        </center>
+    </footer>
+
+</body>
+</html>
